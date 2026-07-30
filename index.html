@@ -8,7 +8,7 @@
   <style>
     body { margin: 0; padding: 0; background-color: #0b0d12; color: #ffffff; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-font-smoothing: antialiased; }
     .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-    .btn-primary { background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); color: #000000; font-size: 1.2rem; font-weight: 800; padding: 18px 36px; text-decoration: none; border-radius: 8px; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); }
+    .btn-primary { background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); color: #000000; font-size: 1.2rem; font-weight: 800; padding: 18px 36px; text-decoration: none; border-radius: 8px; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2); text-align: center; }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 25px rgba(212, 175, 55, 0.3); }
     .product-title-badge { font-size: 1.1rem; font-weight: 800; color: #d4af37; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; display: block; }
     .badge { background: #1a202c; border: 1px solid #d4af37; color: #cbd5e0; font-size: 0.85rem; font-weight: 700; padding: 6px 14px; border-radius: 20px; display: inline-block; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
@@ -16,6 +16,16 @@
     p, li { color: #cbd5e0; }
     details summary { cursor: pointer; font-weight: bold; color: #ffffff; font-size: 1.05rem; outline: none; }
     details summary::-webkit-details-marker { color: #d4af37; }
+
+    /* 📱 تحسينات خاصة بالهاتف (Mobile Responsive) */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem !important; line-height: 1.3 !important; }
+      h2 { font-size: 1.4rem !important; }
+      .btn-primary { width: 100% !important; box-sizing: border-box; padding: 16px 20px !important; font-size: 1.05rem !important; }
+      .container { padding: 0 15px !important; }
+      section { padding: 35px 0 !important; }
+      .product-title-badge { font-size: 0.95rem !important; }
+    }
   </style>
 </head>
 <body>
@@ -35,12 +45,12 @@
       <span class="product-title-badge">Agency Proposal Kit</span>
       <div class="badge">Built For Freelancers & Marketing Agencies</div>
 
-      <!-- Updated Punchy Headline -->
+      <!-- Updated Headline -->
       <h1 style="font-size: 2.5rem; font-weight: 900; line-height: 1.2; margin: 0 auto 20px auto; max-width: 850px; color: #ffffff;">
         Stop Sending Proposals That Get Ignored Like Price Tags.
       </h1>
 
-      <!-- Updated High-Conversion Subheadline -->
+      <!-- Updated Subheadline -->
       <p style="font-size: 1.2rem; color: #cbd5e0; max-width: 720px; margin: 0 auto 30px auto; line-height: 1.6;">
         Turn plain PDFs into high-converting sales assets. Get a battle-tested toolkit with 11 editable templates, smart pricing calculators, and AI prompts designed to position your service as an essential investment.
       </p>
@@ -88,7 +98,6 @@
   <section style="background-color: #0f1219; padding: 60px 0;">
     <div class="container">
       <div style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
-        <!-- Updated to 'Most' -->
         <h2 style="font-size: 2rem; margin-bottom: 15px; color: #ffffff;">Why Most Marketing Proposals Get Ghosted</h2>
         <p style="color: #cbd5e0; line-height: 1.6;">Sending a cold list of deliverables without a strategic decision framework kills your deals in three distinct ways:</p>
       </div>
@@ -268,7 +277,7 @@
           <span style="font-size: 2.8rem; font-weight: 900; color: #d4af37;">$29</span>
         </div>
 
-        <a href="https://whop.com/checkout/plan_6BVSeDa6U1Oxp" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width: 80%; display: block; margin: 0 auto;">
+        <a href="https://whop.com/checkout/plan_6BVSeDa6U1Oxp" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: block; margin: 0 auto;">
           Get Instant Access to the Kit 🚀
         </a>
 
@@ -289,4 +298,3 @@
 
 </body>
 </html>
-
